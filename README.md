@@ -52,3 +52,8 @@ use strict";
 let message = 'Hello there ;-)';
 console.log(message);
 ```
+
+To run this file:
+```bash
+node lib/src/ts/s1_1_hello.js 
+```
