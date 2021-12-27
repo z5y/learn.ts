@@ -2,26 +2,12 @@
 
 ## dependencies
 
-## test 
+## test (non udemy course) 
+https://journal.artfuldev.com/unit-testing-node-applications-with-typescript-using-mocha-and-chai-384ef05f32b2
 
-```bash
-npm install --save-dev mocha
-npm install --save-dev chai
-```
-Create a test spec in the test directory and test it 
-with 
-```bash
-./node_modules/mocha/bin/mocha test
-```
-After this works, edit `package.json` scripts part:
+https://www.chaijs.com/api/assert/
 
-```json
-"scripts": {
-    "test": "mocha"
-  },
-```
-
-### typescript
+### typescript (might conflict with test)
 
 To install typescript dependencies and create 
 the configuration file `tsconfig.json`:
