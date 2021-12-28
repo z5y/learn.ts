@@ -10,5 +10,8 @@ export class Queue<T> {
   pop(): T | undefined {return this.data.shift()}
 }
 
+export function isPalindrome(s: string): boolean {
+  return s === s.split('').reverse().join('');
+}
 
 

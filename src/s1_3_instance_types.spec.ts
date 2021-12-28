@@ -1,6 +1,6 @@
 import { assert} from 'chai';
 import 'mocha';
-import {Queue} from './s1_3_instance_types'
+import {Queue, isPalindrome} from './s1_3_instance_types'
 import {beforeEach} from "mocha";
 
 describe('Queue', () => {
@@ -16,5 +16,14 @@ describe('Queue', () => {
     myQueue.push(2);
     assert.equal(myQueue.pop(), 1)
     assert.equal(myQueue.pop(), 2)
+  })
+})
+
+describe('isPalindrome', () => {
+  it('madam is palindrome', () => {
+    assert(isPalindrome('madam'));
+  })
+  it('son is not palindrome', () => {
+    assert.isFalse(isPalindrome('son'));
   })
 })

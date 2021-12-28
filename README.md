@@ -1,6 +1,47 @@
 
+## react app
+
+Udemy section 1 lecture 20.
+https://www.udemy.com/course/typescript-for-professionals/learn/lecture/22097410#overview
+
+```bash
+npx create-react-app react-example --template typescript
+```
+
+## new project
+
+How to create a new package:
+
+```bash
+mkdir <projectname>
+cd <projectname>
+npm init -y
+npm i typescript -D
+npx tcs --init --rootDir src --outDir lib --sourceMap --declaration --declarationMap
+```
+
+Edit `package.json`:
+
+```json
+"main": "lib",
+"types": "lib",
+"scripts": {
+  "build", "tsc"
+}
+```
+
+To build the package:
+```bash
+npm run build
+```
+
+To publish the package for anyone to use it:
+```bash
+npm publish
+```
 
 ## dependencies
+
 
 ## test (non udemy course) 
 https://journal.artfuldev.com/unit-testing-node-applications-with-typescript-using-mocha-and-chai-384ef05f32b2
