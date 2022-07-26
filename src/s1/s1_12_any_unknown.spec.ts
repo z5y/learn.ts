@@ -44,7 +44,15 @@ describe('Understanding any and unknown', () => {
     // myUnknown.cannot.be.invoked.that.easy();
 
     myUnknown = 'hello';
+    assert.equal(myUnknown, 'hello');
     assert.equal(myUnknown as string, 'hello');
+
+    // does not compile:
+    //assert.equal(myUnknown.trim(), 'hello');
+    if(typeof myUnknown === 'string') {
+      assert.equal(myUnknown.trim(), 'hello');
+    }
+    assert.equal((myUnknown as string).trim(), 'hello');
   })
 })
 
